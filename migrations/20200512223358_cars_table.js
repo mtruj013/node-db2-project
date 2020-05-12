@@ -8,6 +8,8 @@ exports.up = function(knex) {
     tbl.string("brand").notNullable();
     tbl.string("make").notNullable();
     tbl.float("mileage").notNullable();
+    tbl.string("trans-type");
+    tbl.string("title-status");
 
     tbl.timestamps(true, true);
   })
